@@ -1,0 +1,37 @@
+{
+	report_name:"AH-H001-01 2015年3月11日18点测试表",
+	report_creator:"黄金定",
+	report_crete_time:"2015-11-14 11:46:10",
+	contents:
+	[{
+		No:"1",
+		content:"劳动防护用品",
+		items:
+		[{
+			item:"1.1按规定穿戴安全帽、工作服、劳保鞋等劳保用品，并保持整洁",
+			passed："1",
+			note:"",
+			picUrl:""
+		}]
+			
+	},
+	{
+		No:"2",
+		content:"防雷防静电",
+		items:
+		[{
+			item:"2.1按规定进行防雷防静电检测，并提供检测记录",
+			passed："1",
+			note:"",
+			picUrl:""
+		},
+		{
+			item:"2.2接地线、网无破损、断裂",
+			passed："1",
+			note:"",
+			picUrl:""
+		}
+		]
+			
+	}
+}
