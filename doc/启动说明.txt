@@ -16,5 +16,9 @@
 
 5: 打开浏览器输入  localhost 即可查看运行效果
 
+6: 服务器借口文档 及 数据库设计文档 已放入对应文件夹中，请自行查看。（*.md格式为markdown文件，可下载markdownpad2方便查看）。
+
+7: 项目已托管在github上，www.github.com/kissxiaohai/jinshan 
+
 注意： 请确保您安装了 JavaSE 1.6 或更高版本，tomcat下运行项目需要先删除 jetty-server-xxx.jar，否则会有冲突
 
