@@ -44,7 +44,7 @@ public class RunConfig extends JFinalConfig {
 		ActiveRecordPlugin arp = new ActiveRecordPlugin(c3p0Plugin);
 		me.add(arp);
 		arp.addMapping("check_content", "check_content_id", CheckContent.class);
-		arp.addMapping("check_item", "check_item", CheckItem.class);
+		arp.addMapping("check_item", "check_item_id", CheckItem.class);
 		arp.addMapping("check_record", "record_id", CheckRecord.class);
 		arp.addMapping("report", "report_id", Report.class);
 	}

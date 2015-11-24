@@ -4099,3 +4099,9 @@ org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 
 
 2015-11-14 17:44:46
 [WARN]-[Thread: qtp1549409129-27]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /report/
+
+2015-11-24 22:50:27
+[WARN]-[Thread: qtp1549409129-22]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "report.report_id" to Integer value.
+
+2015-11-24 22:50:27
+[WARN]-[Thread: qtp1549409129-22]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=report.report_id

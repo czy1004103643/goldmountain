@@ -22,7 +22,8 @@ report_content 	|varchar（200）		 |	无	  | 检查内容
 #### 检查项表 check_item
 字段			|类型		 |约束		  | 说明
 ------------|------------|------------|------------
-report_item 	|varchar（200）	 |主键		  | 检查项
+report_item_id 	|int（11）	 |主键		  | 检查项id
+report_item 	|varchar（200）	 |		  | 检查项
 table_sequence 	|int（11）		 |	无	  | 所在检查内容中具体序号
 check_content_id 	|int（11）		 |	无	  | 所属检查内容的id
 

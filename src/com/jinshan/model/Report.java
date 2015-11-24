@@ -28,12 +28,13 @@ public class Report extends Model<Report> {
 
 			for (int i = 0; i < check_records.size(); i++) {
 				CheckRecord check_record = check_records.get(i);
-				String check_item = check_record.getStr("check_item");
+				Integer check_item_id = check_record.get("check_item_id");
 				String passed = check_record.getStr("passed");
 				String pic_url = check_record.getStr("pic_url");
 				String note = check_record.getStr("note");
 
-				CheckItem checkItem = CheckItem.dao.findById(check_item);
+				CheckItem checkItem = CheckItem.dao.findById(check_item_id);
+				String check_item = checkItem.get("check_item");
 				int check_content_id = checkItem.getInt("check_content_id");
 				int table_sequence = checkItem.getLong("table_sequence").intValue();
 

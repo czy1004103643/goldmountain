@@ -2,7 +2,6 @@ package com.jinshan.controller;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -13,6 +12,17 @@ import com.jfinal.core.Controller;
 import com.jinshan.model.Report;
 
 public class ReportController extends Controller {
+
+	public void index() {
+		redirect("/html/reportList.html");
+	}
+
+	public void reportList() {
+
+		setAttr("reportList", Report.dao.find("select * from report"));
+
+		renderJson();
+	}
 
 	public void query() {
 		Integer report_id = getParaToInt("report_id");
@@ -26,8 +36,7 @@ public class ReportController extends Controller {
 			setAttr("report_name", report_name);
 			setAttr("report_creator", report_creator);
 			setAttr("report_create_time", report_create_time);
-			List<Object> contents = Report.dao.query(report_id);
-			setAttr("contents", contents);
+			setAttr("contents", Report.dao.query(report_id));
 		}
 		renderJson();
 	}
