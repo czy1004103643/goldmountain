@@ -1,13 +1,11 @@
-app.controller("ReportListController", function($scope, $http) {
-	$http.get("http://localhost/summaryPlan/reportList").success(
-			function(response) {
-				if (response.status == "SUCCESS") {
-					
-					$scope.reportList = response.data;
-					
-				}
-				else{
-//					$http.get("http://localhost/summaryPlan/reportlist");
-				}
-			});
+app.controller("ReportController", function($scope, $http, $rootScope) {
+	
+	var report_id = $rootScope.root_report_id;
+	
+	alert(report_id);
+	
+//	$http.get("/report/query?report_id=" + 1)
+//			.success(function(response) {
+//				$scope.report = response;
+//			});
 });

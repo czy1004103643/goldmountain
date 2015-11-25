@@ -8,24 +8,25 @@
 </head>
 
 <body ng-controller="ReportListController">
-	
+
+
 	<br>
-	<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全检查信息列表</h3>
-	
-	<hr>
-		
-	<ul>
-		<div ng-repeat="report in reportList">
-			<a
-				href="http://localhost/report/query?report_id={{report.report_id}}"><ui>{{report.report_name}}</ui></a>
-		</div>
+	<h4>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全检查信息列表
+		</h3>
 
-	</ul>
-	
-	<hr>
+		<hr>
+
+		<ul>
+			<div ng-repeat="report in reportList">
+				<a ng-click="goToReport(report.report_id)" href="/html/report.html"><ui>{{report.report_name}}</ui></a>
+			</div>
+		</ul>
+
+		<hr>
 
 
-	<script src="/js/app/ReportListApp.js"></script>
-	<script src="/js/controller/ReportListController.js"></script>
+		<script src="/js/app/ReportListApp.js"></script>
+		<script src="/js/controller/ReportListController.js"></script>
 </body>
 </html>

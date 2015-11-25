@@ -1,0 +1,60 @@
+
+2015-11-25 22:27:16
+[WARN]-[Thread: qtp1549409129-26]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:27:16
+[WARN]-[Thread: qtp1549409129-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:29:18
+[WARN]-[Thread: qtp1549409129-26]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:29:18
+[WARN]-[Thread: qtp1549409129-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:29:46
+[WARN]-[Thread: qtp1549409129-24]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:29:46
+[WARN]-[Thread: qtp1549409129-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:29:51
+[WARN]-[Thread: qtp1549409129-29]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:29:51
+[WARN]-[Thread: qtp1549409129-29]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:30:45
+[WARN]-[Thread: qtp1549409129-26]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:30:45
+[WARN]-[Thread: qtp1549409129-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:30:48
+[WARN]-[Thread: qtp1549409129-29]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:30:48
+[WARN]-[Thread: qtp1549409129-29]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:30:53
+[WARN]-[Thread: qtp1549409129-28]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:30:53
+[WARN]-[Thread: qtp1549409129-28]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:30:59
+[WARN]-[Thread: qtp1549409129-29]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:30:59
+[WARN]-[Thread: qtp1549409129-29]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:33:58
+[WARN]-[Thread: qtp1549409129-24]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:33:58
+[WARN]-[Thread: qtp1549409129-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
+
+2015-11-25 22:34:05
+[WARN]-[Thread: qtp1549409129-28]-[com.jfinal.core.ActionException.<init>()]: Can not parse the parameter "undefined" to Integer value.
+
+2015-11-25 22:34:05
+[WARN]-[Thread: qtp1549409129-28]-[com.jfinal.core.ActionHandler.handle()]: 404 Not Found: /report/query?report_id=undefined
