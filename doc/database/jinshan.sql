@@ -102,9 +102,35 @@ CREATE TABLE `check_record` (
 -- ----------------------------
 -- Records of check_record
 -- ----------------------------
-INSERT INTO `check_record` VALUES ('1', '1', '13', '1', '', '备注1');
-INSERT INTO `check_record` VALUES ('2', '1', '14', '1', '', '备注2');
-INSERT INTO `check_record` VALUES ('3', '1', '15', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('1', '1', '1', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('2', '1', '2', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('3', '1', '3', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('4', '1', '4', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('5', '1', '5', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('6', '1', '6', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('7', '1', '7', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('8', '1', '8', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('9', '1', '9', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('10', '1', '10', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('11', '1', '11', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('12', '1', '12', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('13', '1', '13', '1', '/upload/20151208/test.jpg', '备注1');
+INSERT INTO `check_record` VALUES ('14', '1', '14', '1', '', '备注2');
+INSERT INTO `check_record` VALUES ('15', '1', '15', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('16', '1', '16', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('17', '1', '17', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('18', '1', '18', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('19', '1', '19', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('20', '1', '20', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('21', '1', '21', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('22', '1', '22', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('23', '1', '23', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('24', '1', '24', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('25', '1', '25', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('26', '1', '26', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('27', '1', '27', '0', '', '备注3');
+INSERT INTO `check_record` VALUES ('28', '1', '28', '0', '', '备注3');
+
 
 -- ----------------------------
 -- Table structure for `report`

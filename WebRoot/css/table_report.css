@@ -12,7 +12,7 @@ th {
 	border-top: 1px solid #C1DAD7;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	text-align: left;
+	text-align: center;
 	padding: 6px 6px 6px 12px;
 	background: #CAE8EA no-repeat;
 }
@@ -24,6 +24,7 @@ td {
 	font-size: 14px;
 	padding: 6px 6px 6px 12px;
 	color: #4f6b72;
+	text-align: left;
 }
 
 td.alt {
@@ -31,7 +32,7 @@ td.alt {
 	color: #797268;
 }
 
-th.spec, td.spec {
+th.spec,td.spec {
 	border-left: 1px solid #C1DAD7;
 }
 /*---------for IE 5.x bug*/
@@ -39,7 +40,12 @@ html>body td {
 	font-size: 14px;
 }
 
-tr.select th, tr.select td {
+tr.select th,tr.select td {
 	background-color: #CAE8EA;
 	color: #797268;
+}
+
+img {
+	width: 50px;
+	height: 40px;
 }

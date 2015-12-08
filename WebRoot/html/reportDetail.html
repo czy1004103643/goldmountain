@@ -1,0 +1,58 @@
+<div>
+	<center>
+		<form action="/report/update" method="post"
+			enctype="multipart/form-data">
+			<input type="hidden" name="report_id" value="{{report_id}}" >
+			<lable for="creator">创建者：</lable>
+			<input id="creator" type="text" value="{{report.report_creator}}" name="report_creator"><br>
+			<br>
+			<lable>创建/修改时间：{{report.report_create_time}}</lable>
+			<br> <br>
+			<table width="80%" border="1">
+				<caption>
+					<input id="name" type="text" value="{{report.report_name}}"
+						style="width: 30%; text-align: center" name="report_name">
+				</caption>
+
+				<thead>
+					<tr>
+						<th width="20%">检查内容</th>
+						<th width="50%">检查项</th>
+						<th width="5%">是否通过</th>
+						<th width="10%">图片</th>
+						<th width="15%">备注</th>
+					</tr>
+				</thead>
+
+				<tbody ng-repeat="content in contents">
+
+					<tr ng-repeat="item in content.items">
+
+						<td rowspan="{{content.items.length}}" ng-show="$index==0">{{content.No
+							+ "." + content.content}}</td>
+
+						<td>{{item.item}}</td>
+
+						<td><input type="checkbox" ng-checked="{{item.passed}}==1"
+							name="passed_{{content.No}}_{{$index+1}}"></td>
+
+						<td class="img"><a ng-show="{{item.pic_url}}"
+							href="{{item.pic_url}}"><img src="{{item.pic_url}}"></a> <input
+							type="file" accept="image/*"
+							name="pic_url_{{content.No}}_{{$index+1}}"></td>
+
+						<td><input type="text" value="{{item.note}}"
+							style="word-break: break-all" placeholder="请填写备注"
+							name="note_{{content.No}}_{{$index+1}}"></td>
+					</tr>
+
+				</tbody>
+
+			</table>
+
+			<input type="submit"></input>
+
+		</form>
+	</center>
+</div>
+

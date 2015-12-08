@@ -1,32 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd";>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<html ng-app="ReportListApp">
-<head>
-<link rel="stylesheet"
-	href="http://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
-</head>
-
-<body ng-controller="ReportListController">
-
-
+<div>
 	<br>
 	<h4>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全检查信息列表
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;瀹夊叏妫�鏌ヤ俊鎭垪琛�
 		</h3>
 
 		<hr>
 
 		<ul>
 			<div ng-repeat="report in reportList">
-				<a ng-click="goToReport(report.report_id)" href="/html/report.html"><ui>{{report.report_name}}</ui></a>
+				<a href="#/reports/{{report.report_id}}"><ui>{{report.report_name}}</ui></a>
 			</div>
 		</ul>
 
 		<hr>
-
-
-		<script src="/js/app/ReportListApp.js"></script>
-		<script src="/js/controller/ReportListController.js"></script>
-</body>
-</html>
+</div>
