@@ -89,7 +89,7 @@ CREATE TABLE `check_record` (
   `record_id` int(11) NOT NULL AUTO_INCREMENT,
   `report_id` int(11) NOT NULL,
   `check_item_id` int(11) NOT NULL,
-  `passed` varchar(1) NOT NULL,
+  `passed` varchar(1) DEFAULT '0',
   `pic_url` varchar(200) DEFAULT '""',
   `note` varchar(200) DEFAULT '""',
   PRIMARY KEY (`record_id`),
@@ -147,9 +147,4 @@ CREATE TABLE `report` (
 -- ----------------------------
 -- Records of report
 -- ----------------------------
-INSERT INTO `report` VALUES ('1', 'AH-H001-01 2015年3月11日18点测试表', '黄金定', '2015-11-14 11:46:10');
-INSERT INTO `report` VALUES ('2', 'AH-H001-02 2015年3月12日18点测试表', '杜佳佳', '2015-11-14 11:46:10');
-INSERT INTO `report` VALUES ('3', 'AH-H001-03 2015年3月12日18点测试表', '杜佳佳', '2015-11-14 11:46:10');
-INSERT INTO `report` VALUES ('4', 'AH-H001-04 2015年3月12日18点测试表', '杜佳佳', '2015-11-14 11:46:10');
-INSERT INTO `report` VALUES ('5', 'AH-H001-05 2015年3月12日18点测试表', '杜佳佳', '2015-11-14 11:46:10');
-INSERT INTO `report` VALUES ('6', 'AH-H001-06 2015年3月12日18点测试表', '杜佳佳', '2015-11-14 11:46:10');
+INSERT INTO `report` VALUES ('1', 'AH-H001-01 2015年3月11日18点测试表', '杜佳', '2015-12-10 11:46:10');

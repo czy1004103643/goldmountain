@@ -9,23 +9,30 @@ appControllers.controller('ReportListController', [ '$scope', '$http',
 			});
 		} ]);
 
-appControllers.controller('ReportDetailController', [
-		'$scope',
-		'$routeParams',
-		'$http',
-		function($scope, $routeParams, $http) {
+appControllers.controller('ReportDetailController', [ '$scope', '$routeParams',
+		'$http', function($scope, $routeParams, $http) {
 			$scope.report_id = $routeParams.report_id;
 
-			$http.get("/report/query?report_id=" + $scope.report_id).success(
-					function(response) {
+			var url = "";
 
-						$scope.report = response;
-						$scope.contents = response.contents;
+			if ($scope.report_id == "add") {
+				url = "/report/add";
 
-					});
+			} else {
+				url += "/report/query?report_id=" + $scope.report_id;
+			}
 
-						$scope.submit = function() {
-			
-						};
+			$http.get(url).success(function(response) {
+
+				$scope.report = response;
+				$scope.contents = response.contents;
+
+			});
+
+			$scope.remove = function(report_id) {
+				if (confirm("确定删除？")) {
+					$http.get("/report/delete?report_id=" + $scope.report_id);
+				}
+			};
 
 		} ]);

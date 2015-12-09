@@ -1,17 +1,20 @@
 <div>
 	<center>
 		<form action="/report/update" method="post"
-			enctype="multipart/form-data">
-			<input type="hidden" name="report_id" value="{{report_id}}" >
+			enctype="multipart/form-data" target="rfFrame">
+			<input type="hidden" name="report_id" value="{{report_id}}">
 			<lable for="creator">创建者：</lable>
-			<input id="creator" type="text" value="{{report.report_creator}}" name="report_creator"><br>
-			<br>
-			<lable>创建/修改时间：{{report.report_create_time}}</lable>
-			<br> <br>
+			<input id="creator" type="text" value="{{report.report_creator}}"
+				name="report_creator" placeholder="创建者"><br> <br>
+			<lable for="time">创建时间：</lable>
+			<input id="time" type="text" value="{{report.report_create_time}}"
+				name="report_time" placeholder="创建时间" readonly> <a
+				href="#/reports/" ng-click="remove()">删除</a><br> <br>
 			<table width="80%" border="1">
 				<caption>
 					<input id="name" type="text" value="{{report.report_name}}"
-						style="width: 30%; text-align: center" name="report_name">
+						style="width: 30%; text-align: center" name="report_name"
+						placeholder="请填写安全检查信息表名">
 				</caption>
 
 				<thead>
@@ -53,6 +56,9 @@
 			<input type="submit"></input>
 
 		</form>
+
+		<iframe hidden id="rfFrame" name="rfFrame" src="about:blank"$amp;>amp;$lt;</iframe>
+
 	</center>
 </div>
 

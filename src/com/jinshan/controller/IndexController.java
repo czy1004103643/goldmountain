@@ -6,7 +6,8 @@ public class IndexController extends Controller {
 	
 	public void index() {
 		
-		setAttr("status", "SUCCESS");
-		renderJson();
+//		setAttr("status", "SUCCESS");
+//		renderJson();
+		redirect("/index.html");
 	}
 }

@@ -1,14 +1,17 @@
 <div>
 	<br>
 	<h4>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全检查信息列表
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全检查信息列表 &nbsp;&nbsp;<a
+			href="#/reports/add">添加</a>
 		</h3>
 
 		<hr>
 
 		<ul>
 			<div ng-repeat="report in reportList">
-				<a href="#/reports/{{report.report_id}}"><ui>{{report.report_name}}</ui></a>
+				<ui>
+				<a href="#/reports/{{report.report_id}}">{{report.report_name}}</a>
+				</ui>
 			</div>
 		</ul>
 
